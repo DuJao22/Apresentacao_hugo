@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-neon: #00ffcc;
+  --color-dark: #050505;
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-neon {
+  color: #00ffcc;
+  text-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+}
+
+.glow-box {
+  box-shadow: 0 0 40px rgba(0, 255, 204, 0.15);
+}
+
+.btn-neon {
+  background: transparent;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.2), inset 0 0 10px rgba(0, 255, 204, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+  background: rgba(0, 255, 204, 0.1);
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.4), inset 0 0 15px rgba(0, 255, 204, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-solid-neon {
+  background: #00ffcc;
+  color: #050505;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-solid-neon:hover {
+  box-shadow: 0 0 40px rgba(0, 255, 204, 0.6);
+  transform: translateY(-2px);
+}
